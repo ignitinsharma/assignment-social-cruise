@@ -1,0 +1,424 @@
+.ProjectMain {
+  width: 80%;
+  margin: auto;
+  height: auto;
+}
+
+.ProjectH1 {
+  color: var(--grey-color);
+  font-size: 8rem;
+  margin-bottom: 0.5rem;
+  /* margin-bottom: 1rem; */
+}
+
+.ProjectSection {
+  display: flex;
+  height: auto;
+  gap: 2rem;
+  margin: auto;
+  margin-bottom: 5rem;
+  border-top: 1px solid black;
+  padding-top: 2rem;
+}
+
+.ProjectLeftSection {
+  width: 50%;
+  text-align: left;
+}
+
+.ProjectName {
+  font-size: 2rem;
+  padding-left: 1rem;
+  display: inline-block;
+  position: relative;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.ProjectName::after {
+  content: "";
+  position: absolute;
+  width: 92%;
+  margin-left: 1rem;
+  transform: scaleX(0);
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.ProjectName:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.ProjectLeftGreen {
+  padding: 2rem 1rem;
+  position: absolute;
+  margin-top: -0.5rem;
+  width: 42%;
+  height: auto;
+  border-radius: 20px;
+  background: rgb(19, 185, 135);
+  background: linear-gradient(
+    180deg,
+    rgba(19, 185, 135, 1) 81%,
+    rgba(47, 45, 45, 1) 100%
+  );
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* P Tag */
+.TechStackImages {
+  width: 18px;
+  height: 17px;
+  margin-left: 0.2rem;
+}
+
+.TechStackContainer {
+  padding: 0rem 2rem;
+  /* border: 1px solid greenyellow; */
+  margin-top: 11rem;
+  display: grid;
+  row-gap: -2rem;
+  column-gap: 0.5rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(80px, max-content));
+  align-items: center;
+}
+
+.PTagForSKills {
+  padding: 0.3rem 0.9rem;
+  margin-right: 0.2rem;
+  border-radius: 10px;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: aliceblue;
+  background-color: rgb(31, 30, 30);
+  text-align: center;
+}
+
+.ProjectBTN {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+}
+
+.linkSection {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  padding: 1rem 0.8rem;
+}
+.linkSection > a {
+  text-decoration: none;
+}
+
+.ProjectRightSection {
+  width: 60%;
+  height: 22rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.ProjectImages {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+}
+.ProjectImages:hover {
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+
+/* ======= Second Project Section ======== */
+
+.SecondProjectParent {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.SecondProjectH1 {
+  color: var(--grey-color);
+  font-size: 3rem;
+}
+
+.SecondProjectSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.SingleProductDiv {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  background: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  padding: 1rem 0.4rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.SingleProductDiv:hover {
+  border: 2px solid var(--main-color);
+  transform: scale(1.05);
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+}
+
+.SingleProductDiv:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.SingleProjectsImage {
+  width: 260px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.SingleProjectsPTag {
+  font-size: 13px;
+  font-weight: 500;
+}
+.SecondProjectTitleTag {
+  font-weight: 550;
+  font-size: 1.2rem;
+}
+
+.SecondProjectSpanDiv {
+  margin: 1rem 0;
+}
+.SecondProjectSpanDiv span {
+  margin-right: 0.3rem;
+  font-style: italic;
+}
+.SecondProjectPforDesc {
+  width: 80%;
+  margin: auto;
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.SecondProjectLinkDiv a {
+  margin-right: 0.4rem;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1110px) {
+  .ProjectH1 {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+  }
+  .ProjectSection {
+    display: flex;
+    justify-content: flex-start;
+    display: block;
+    gap: 2rem;
+    margin: auto;
+    margin-bottom: 7rem;
+  }
+  .ProjectLeftSection {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .ProjectRightSection {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .ProjectLeftGreen {
+    padding: 2rem 1rem;
+    position: relative;
+    width: auto;
+  }
+
+  .TechStackContainer {
+    margin-top: 1rem;
+  }
+  .ProjectImages {
+    margin-top: 4rem;
+  }
+  .SecondProjectSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .ProjectH1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  .ProjectSection {
+    display: flex;
+    justify-content: flex-start;
+    display: block;
+    gap: 2rem;
+    margin: auto;
+  }
+  .ProjectLeftSection {
+    width: 100%;
+    text-align: left;
+  }
+  .ProjectRightSection {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .ProjectLeftGreen {
+    padding: 2rem 1rem;
+    position: relative;
+    width: auto;
+  }
+
+  .TechStackContainer {
+    margin-top: 1rem;
+  }
+  .linkSection {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+  }
+  .ProjectImages {
+    margin-top: -4rem;
+  }
+  .SecondProjectSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .SingleProjectsImage {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .ProjectH1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .ProjectSection {
+    display: flex;
+    justify-content: flex-start;
+    display: block;
+    gap: 2rem;
+    margin: auto;
+    padding-top: 1rem;
+  }
+  .ProjectLeftSection {
+    width: 100%;
+    text-align: left;
+  }
+  .ProjectRightSection {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: -3rem;
+  }
+
+  .ProjectLeftGreen {
+    padding: 2rem 1rem;
+    position: relative;
+    width: auto;
+  }
+
+  .TechStackContainer {
+    margin-top: 1rem;
+  }
+
+  .linkSection {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+  }
+
+  .ProjectButtons {
+    width: 8rem;
+    height: 2.6em;
+  }
+
+  .ProjectImages {
+    margin-top: -10rem;
+  }
+  .SecondProjectSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .SecondProjectH1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .ProjectH1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .ProjectSection {
+    display: flex;
+    justify-content: flex-start;
+    display: block;
+    gap: 2rem;
+    margin: auto;
+    margin-bottom: -8rem;
+    padding-top: 0.6rem;
+  }
+  .ProjectLeftSection {
+    /* border: 1px solid blue; */
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .ProjectRightSection {
+    /* border: 1px solid green; */
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .ProjectLeftGreen {
+    padding: 2rem 1rem;
+    position: relative;
+    width: auto;
+  }
+
+  .TechStackContainer {
+    margin-top: 0rem;
+  }
+  .linkSection {
+    display: flex;
+    gap: 1px;
+    justify-content: left;
+  }
+
+  .ProjectButtons {
+    width: 6rem;
+    height: 2.6em;
+  }
+
+  .ProjectImages {
+    margin-top: -12rem;
+  }
+  .SecondProjectSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .SecondProjectH1 {
+    font-size: 2rem;
+  }
+  .SingleProjectsImage {
+    width: 230px;
+    height: 140px;
+  }
+}
